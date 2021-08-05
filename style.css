@@ -1,0 +1,494 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    width: 100% ;
+    justify-content: space-between;
+    background-color: #93c83f;
+    align-items: center;
+   
+}
+nav img{
+    width: 100px;
+}
+nav a {
+    text-decoration: none;
+    color:white;
+    margin: 0 40px;
+}
+nav i{
+    cursor: pointer;
+    font-size: 80px;
+    display: none;
+}
+.divbox-nav{
+    padding: 0px !important;
+}
+i.selecao{
+    position: fixed;
+    top: 1px;
+    z-index: 1001;
+   left: 78%;
+   height: 10px;
+
+   
+}
+.menu.selecao{
+    position: fixed;
+    width: 100%;
+    height: 34vh;
+    background-color: #f84a09cc;
+    flex-direction: column;
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+
+
+.menu a:hover { 
+    
+    color:tomato;
+    transition: 1s;
+    text-align: center;
+     }
+
+     .menu hr {
+         color:white;
+     }
+/* CARROUSEL */
+.paicarousel img {
+    width: 100% !important;
+    height: 420px !important;
+    object-fit: cover;
+    position: relative;
+    
+} 
+    
+.paicarousel{ 
+    background-color: #F9F9F9;
+    padding: 0px !important;
+    
+}
+    
+.paicarousel .carousel-control-prev-icon {
+     background-color: tomato;
+     margin: 0px 10px;
+     border-radius: 50px;
+     padding: 20px;
+     font-size:1%
+}
+    
+.paicarousel .carousel-control-next-icon {
+    background-color: tomato;
+    margin: 0px 10px;
+    border-radius: 50px;
+    padding: 20px;
+    font-size:1%
+}
+/* SESSAO 2 */
+.cardspai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px;
+    align-content: center;
+}
+.cards {
+    background-color:rgb(143, 114, 23);
+    width: 200px;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: white;
+    border-radius: 7px;
+/*definir o tamanho da class .cards */
+}
+/* estilização com virgula você ultiliza os 2 conteudos ao mesmo tempo */
+/* estilização sem a virgula. pega o elemento filho o que vier depois   */
+.cards img {
+    width: 100%;
+    height: 200px;
+    transition: 1s;
+    object-fit: cover; /*ajusta a imgem para caber no conteudo inteiro */ 
+}
+.cards img:hover {
+    height: 250px;
+}
+.subtitulo {
+    margin: 20px 0px;
+    font-weight: bolder; /*propriedade e valor de formato da espeçura da fonte*/
+    text-align: center;
+}
+.subtitulo p {
+    text-align: center;
+    color: #9D9F9E;
+}
+
+.subtitulo .title  {
+    text-align: center;
+    background-color: #F9F9F9;
+    padding: 20px 0px;
+    margin: 10px 10px;
+    border-radius: 7px;
+    color: #977818;
+    font-size: 42px;
+}
+/* SESSAO 3 */
+.sessao3 h1{
+    text-align: center;
+    background-color: #F9F9F9;
+    padding: 20px 0px;
+    margin: 10px 10px;
+    border-radius:7px;
+    color: #9D9F9E;
+    font-size: 42px;
+}
+.sessao3  P {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size:TAMANHO DA FONTE */
+    font-size: 16px;
+    /* line-height:ALTURA DA LINHA */
+    line-height: 28px;
+    /* font-weight: ESPESSURA DA FONTE */
+    font-weight: 400;
+    /* letter-spacing:ESPAÇAMENTO ENTRE AS LETRAS */
+    letter-spacing: 0px;
+}
+
+.sessao3 .texto1 h3, .sessao3 .texto-agenda h2 {
+    font-size: 1.75rem;
+    color: #977818;
+    font-weight:300;
+}
+.box-texto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.box-texto img {
+    object-fit: cover;
+    width: 400px;
+    padding: 10px 5px;
+}
+.box-texto img, .box-texto .texto1, .box-texto .texto2{
+    margin: 20px;
+}
+.texto1{
+    width: 400px;
+}
+.sessao3 .texto-dias label {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-block;
+        font-weight: 400;
+        padding: 5px 11px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-image: url(https://estetica.wilmark.com.br/Loren/wp-content/themes/betheme/images/stripes/stripes_3_b.png);
+        background-color: #f8f8f8;
+}
+
+.sessao3 .texto-horario p, .texto-horario sup{
+    
+    color: #977818;
+    font-size: 30px;
+    text-align: center;
+    position: inherit;
+}
+
+.texto2{
+    border: solid 2px rgb(214, 214, 214);   
+    background-image: url(imagens/imagem-fundo.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    text-align: center; 
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#fechad {
+    color:white;
+    border: solid 2px;
+    border-radius: 7px;
+    background-color: #977818;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+}
+/* SESSAO-4 */
+.sessao4 .localizacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.localmapa {
+    width: 400px;
+}
+.sessao4 h2 {
+    text-align: center;
+    background-color: #F9F9F9;
+    padding: 20px 0px;
+    margin: 10px 10px;
+    border-radius:7px;
+    color: #9D9F9E;
+    font-size: 42px;
+}
+/* SESSA05 */
+
+.display-icone div {
+    display: flex;
+    margin: 0px 20px;
+   
+    
+}
+
+.box-form label {
+   position: relative;
+   
+}
+
+.display-icone p {
+    margin: 20px 10px;
+}
+
+.display-icone i {
+    color:#0385B5;
+    font-size: 40px;
+    text-align: center;
+}
+.sessao5 h1, .sessao5 p{
+    color:#977818;
+
+}
+
+.sessao5{
+    background-color:#EFEADAcf;
+    text-align: center;
+    margin: 3px;
+}
+
+
+
+.box-form {
+    display: flex;
+    margin: 0px -55px;
+    padding: 0px 50px;
+    text-align: left;
+   
+}
+
+.botao {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color:white;
+    background-color:#977818;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size:TAMANHO DA FONTE */
+    font-size: 16px;
+    /* line-height:ALTURA DA LINHA */
+    line-height: 28px;
+    /* font-weight: ESPESSURA DA FONTE */
+    font-weight: 400;
+    /* letter-spacing:ESPAÇAMENTO ENTRE AS LETRAS */
+    letter-spacing: 0px;
+    border-radius: 50px;
+    border-style: inherit;
+ 
+}
+.dispayflex-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    margin: 20px 0px !important;
+    border-radius: 10px;
+}
+.placeholder a{
+    position: relative;
+    top: -10px;
+    text-decoration: none;
+    border: solid 2px;
+    color: white;
+    background: #00acfe;
+    padding: 10px;
+    border-radius: 50px;
+}
+  
+.box-form input, textarea{
+    border: solid 1px black;
+    margin: 0px 10px;
+}
+
+
+.box-form input {
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size:TAMANHO DA FONTE */
+    font-size: 16px;
+    /* line-height:ALTURA DA LINHA */
+    line-height: 28px;
+    /* font-weight: ESPESSURA DA FONTE */
+    font-weight: 400;
+    /* letter-spacing:ESPAÇAMENTO ENTRE AS LETRAS */
+    letter-spacing: 0px;
+    border: none;
+
+    
+}
+
+ .box-form  input:focus, textarea {
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+form {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.cards {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.box-form label {
+    color:#977818;
+    margin: 0px 26px;
+}
+/* footer */
+.footerrodape {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center ;
+    }
+    
+.footerrodape .footer-icone {
+        background-color: #626262;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 7px;
+    }
+    
+    
+.footerrodape .footer-text {
+        background-color: #626262;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .curso a {
+        background: rgb(255, 64, 0);
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        z-index: 999;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0px -80px;
+        border-radius: 50px ;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+  
+/*@media: propriedade css que possibilita rodar novos comandos css após um deteminado tamanho da tela */
+@media(max-width:768px){
+    nav{
+        flex-wrap:wrap;
+    }
+    nav i{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .box-form{
+        flex-direction: column;
+        
+
+    }
+}
+@media (max-width:500px){
+    .cardspai {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sessao3 h1, .sessao4 h2 {
+        font-size: 20px;
+    }
+    .dispayflex-form {
+        justify-content: center;
+    }
+    .box-texto img{
+        width: 320px;
+    }
+    
+    .footer-text div {
+        display: flex;
+        flex-direction: column;
+    }
+}

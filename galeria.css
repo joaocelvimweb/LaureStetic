@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://estetica.wilmark.com.br/Loren/wp-content/themes/betheme/images/stripes/stripes_3_b.png);
+    
+}
+
+.voltar {
+display: flex;
+justify-content: center;
+
+   
+    
+}
+.voltar a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+    border: solid white;
+    width: 100px;
+    background-color:#93c83f;
+    color: white;
+    border-radius: 50px;
+   
+  
+}
+
+/* CSS-GRID */
+.galeria{
+    /* QUANTIDADE DE COLUNAS TEM QUE SER IGUAL A QUANTIDADE DE LINHAS */
+    grid-template-areas:
+    "SOMBRA-1 SOMBRA-2 SOMBRA-3"
+    "SOMBRA-4 SOMBRA-5 SOMBRA-6"
+    "SOMBRA-7 SOMBRA-8 SOMBRA-6"
+    "iframe iframe iframe"
+    ;
+
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*GRIP-GAP: propriedade que permite espaçamentos entre os elementos */
+    grid-gap: 2px; 
+     }
+
+.active{
+    position: absolute;
+    width: 30%;
+    transition: 2s;
+}
+ 
+/* CSS GRID AREA */
+ .SOMBRA-1 {
+     grid-area: SOMBRA-1;
+     background-image: url(imggaleria/SOMBRA-1.jpeg);
+    
+ }
+ .SOMBRA-2 {
+    grid-area: SOMBRA-2;
+    background-image: url(imggaleria/SOMBRA-2.jpeg);
+   
+}
+.SOMBRA-3 {
+    grid-area: SOMBRA-3;
+    background-image: url(imggaleria/SOMBRA-3.jpeg);
+    
+}
+.SOMBRA-4 {
+    grid-area: SOMBRA-4;
+    background-image: url(imggaleria/SOMBRA-4.jpeg); 
+ }
+    
+
+.SOMBRA-5 {
+    grid-area: SOMBRA-5;
+    background-image: url(imggaleria/SOMBRA-5.jpeg);
+
+}
+.SOMBRA-6 {
+    grid-area: SOMBRA-6;
+    background-image: url(imggaleria/SOMBRA-6.jpeg);
+
+}
+.SOMBRA-7 {
+    grid-area: SOMBRA-7;
+    background-image: url(imggaleria/SOMBRA-7.jpeg);
+
+}
+.SOMBRA-8 {
+    grid-area: SOMBRA-8;
+    background-image: url(imggaleria/SOMBRA-8.jpeg);
+   
+}
+
+.iframe {
+    grid-area: iframe;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+   
+/* flexbox-exemplo 
+.galeria {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.galeria {
+    flex: 1 1 200px;
+}
+*/
+h1.title-txt span {
+    color: #93c83f;
+  
+ }
+ h1 {
+    text-align: center;
+    background-color: #F9F9F9;
+    margin: 5px 0px;
+    padding: 20px;
+    width: 100%;
+ }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 5;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color:white;
+    transition: all .4s ease-in;
+    /* ease0-in: tipo de efeito */
+    background-position:50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+  div.gallery:hover{
+      background-position:0px 0px;
+      background-size:100%;
+    transform: scale(1.1);
+}
+  P.desc  {
+    padding: 5px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    opacity: 1;
+    text-shadow: 1px 1px 1px;     
+  }
+
+  /* footer */
+  .footerrodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 800px;
+    margin:  auto;
+    }
+    
+.footerrodape .footer-icone {
+        background-color: #626262;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 7px;
+    }
+    
+    
+.footerrodape .footer-text {
+        background-color: #626262;
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .curso a {
+        background: rgb(255, 64, 0);
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        z-index: 999;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 0px -80px;
+        border-radius: 50px ;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    @media (max-width:560px) {
+        .youtube{
+        width: 100% !important;
+        }
+        .galeria {
+            grid-template-areas:
+            "SOMBRA-1 SOMBRA-2 "
+            "SOMBRA-3 SOMBRA-4"
+            "SOMBRA-5 SOMBRA-6"
+            "SOMBRA-7 SOMBRA-8"
+            "iframe iframe"
+            ;
+        }
+        
+        }
+   

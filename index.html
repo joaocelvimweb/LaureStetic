@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="topo">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Clinica Laure</title>
+    <script src="main.js" defer></script>
+    <!-- Sempre escreva com DEFER para ser lido por ultimo o script -->
+</head>
+<body>
+    <!-- botao whatzpp -->
+  <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+55(66)992019659", // WhatsApp number
+            call_to_action: "Fale Conosco Agora!", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
+
+      <!-- Propriesade css: define uma largura maxima para o contanir-xxl 1300px  -->
+
+    <div class="container-xxl divbox-nav">
+         <nav >
+            <img src="logo.png" alt="">  
+            <i id="iconMenu" class="bi bi-list "></i>
+            
+            <div class="menu">
+                <a href="#topo">Home</a>
+                <a href="">Clinica</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contato">Contato</a> <hr>
+           </div>
+        </nav> 
+    </div>
+    
+    <section class="paicarousel container-xxl">  <!--Elemnto pai-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/entrada.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                     <img src="imagens/cama.jpeg" class="d-block w-100" alt="...">
+                </div>
+                    <div class="carousel-item">
+                 <img src="imagens/porta.jpeg" class="d-block w-100" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/sofa.jpeg" class="d-block w-100" alt="...">
+                   </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section  class="container-xxl">
+        <div class="subtitulo">
+            <!-- CONTANIER Elemto pai: H1, PARAGRAFRO, CARDS -->
+            
+            <h1 class="title">Nossas especialidades</h1>
+            <P>Clique na especialidade desejada para mais informações</P>
+        
+        </div>
+        <div class="cardspai">
+            <div class="cards">    
+                <!-- figcation: se torna mais semanatico a uso dessa tag. apenas imagem-->
+                <figcaptiopn>   
+                    <img src="imagens/entrada.jpeg" alt="estetica facial">
+                </figcaptiopn>
+                <div>
+                    <p>MAKE PROFISSIONAL</p>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- figcation: se torna mais semanatico a uso dessa tag. apenas imagem-->
+                <figcaptiopn>   
+                    <img src="imagens/corporal.jfif" alt="estetica facial">
+                </figcaptiopn>
+                <div id="galeria">
+                 <a href="galeria.html" target="_self" rel="noopener noreferrer"><p>GALERIA</p></a>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- figcation: se torna mais semanatico a uso dessa tag. apenas imagem-->
+                <figcaptiopn>   
+                    <img src="imagens/entrada.jpeg" alt="estetica facial">
+                </figcaptiopn>
+                <div>
+                    <p>MAKE PROFISSIONAL</p>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- figcation: se torna mais semanatico a uso dessa tag. apenas imagem-->
+                <figcaptiopn>   
+                    <img src="imagens/corporal.jfif" alt="estetica facial">
+                </figcaptiopn>
+                <div>
+                    <p>HARMONIZAÇÃO CORPORAL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</fieldset>
+    
+    <!-- sessao 3 -->
+    <section class="sessao3 container-xxl">
+        <h1>ESTETICISTA: Thaiane Laure</h1>
+        <div class="box-texto"> 
+            <figcaption>
+                <img src="imagens/foto-2.jpeg" alt="laure">
+            </figcaption>
+            <div class="texto1">
+                <h3>Quer agendar a sua consulta?</h3>
+                <p>no botão abaixo e preencha o formulário que nossa equipe entrará em contato com você.</p>                    
+                <p>
+                    Após enviar o formulário, fique atento(a) ao seu telefone que em até 24h(úteis) entraremos em contato para agendar data e horário.
+                    Agende já sua consulta
+                </p>
+            </div>
+            <div class="texto2">
+                <div class="texto-agenda">
+                    <h2>Horário de atendimento</h2>
+                     <p>Fique atento(a) aos horários de atendimento.</p>
+                </div>
+                <div class="texto-dias">
+                    <label>Segunda - Terça - Quarta - Quinta e Sexta</label> 
+                    <span>
+                        <hr>
+                        <div class="texto-horario">
+                            <p>08: <sup>00 - </sup> 18: <sup>00</sup></p> 
+                        </div>                       
+                         <label>Sábado - Domingo</label>
+                         <p id="fechad">Fechado</p>
+                    </span>     
+                </div>
+             </div>   
+        </div>
+    </section>
+    <!-- SESSAO4 -->
+    <section class="sessao4 container-xxl"> <!--Sessao pai-->
+        <h2>Tratamentos com alto padrão de qualidade e confiabilidade</h2>
+        <div class="localizacao"> <!--sessao filho-->
+            <div class="localmapa"> <!--sessao neto-->
+                 <h3>Saiba como chegar na Clinica</h3> <!--sessao neto-->
+                 <p>A agência é situada na cidade de Araguaína na Sala, Av. José de Brito, 409 - 1-a 1o andar - George Yunes, Araguaína - TO, 77818-530</p>
+            </div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15370.471442674136!2d-56.103067849999995!3d-15.612053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1fc7c9427bd%3A0x335d08db97576fe!2sResidencial%20Parque%20Chapada%20dos%20Guimar%C3%A3es!5e0!3m2!1spt-BR!2sbr!4v1624465826841!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>                   
+    </section>
+
+<!-- sessap5 -->
+<section class="container-xxl sessao5">
+    <div>
+        <h1>Cadastro de Email</h1>
+        <p>Preencha o formulário abaixo e aguarde que nossa equipe entrará em contato com você.</p>
+    </div>
+    <div class="dispayflex-form" id="contato">
+        <div class="display-icone">
+            <div>
+                <i class="bi bi-envelope"></i>
+                <p>joaocelvim.web@hotmail.com</p>
+            </div>
+            <div>
+                <i class="bi bi-telephone"></i>
+                <p>(66)99201-9659</p>
+            </div> 
+        </div>
+        <form>
+            <div class="box-form">
+                <div>
+                    <label for="nome">Nome:</label> <br>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label> <br>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+            </div>
+            <textarea name="texto" id="texto" placeholder="Digite sua Mensagem"></textarea>
+            <div class="placeholder">
+            <a href="mailto:joaocelvim.web@hotmail.com">Enviar Email</a>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- SESSAO-6 -->
+<Footer class="footerrodape">
+    <div class="footer-icone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+        <div class="footer-text"> 
+            <div>
+                <b>Responsável técnico: Thaine Laure.</b>
+                <b>CRC:OOOO</b> 
+            </div>
+            <div class="curso fa fa-arrow-up">
+                <div>
+                    <a href="#topo">topo</a>
+                </div>
+            </div>
+          
+            <hr>
+            <p>© 2021 Celvim. Todos direitos reservados. Feito por: Celvim. </p>
+           
+        </div>
+    </div>  
+</Footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</html>
