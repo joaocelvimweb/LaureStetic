@@ -155,8 +155,8 @@ h1.title-txt span {
     background-repeat: no-repeat;
   }
   div.gallery:hover{
-      background-position:0px 0px;
-      background-size:100%;
+    background-position:0px 0px;
+    background-size:100%;
     transform: scale(1.1);
 }
   P.desc  {
