@@ -41,12 +41,14 @@ a {
 
 .menu {
     display: flex;
+   
+    
 }
 
 
 .menu li {
     margin-left: 10px;
-  
+   
 }
 
 

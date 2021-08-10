@@ -40,7 +40,7 @@ justify-content: center;
     ;
 
     display: grid;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     /*GRIP-GAP: propriedade que permite espaçamentos entre os elementos */
     grid-gap: 2px; 
