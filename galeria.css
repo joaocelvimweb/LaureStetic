@@ -222,7 +222,7 @@ h1.title-txt span {
 
     @media (max-width:560px) {
         .youtube{
-        width: 100% !important;
+        width: 80% !important;
         }
         .galeria {
             grid-template-areas:
