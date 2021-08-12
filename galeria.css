@@ -40,10 +40,10 @@ justify-content: center;
     ;
 
     display: grid;
-    max-width: 800px;
+    max-width: 920px;
     margin: 0 auto;
     /*GRIP-GAP: propriedade que permite espaçamentos entre os elementos */
-    grid-gap: 2px; 
+    grid-gap: 10px; 
      }
 
 .active{
@@ -144,8 +144,8 @@ h1.title-txt span {
   div.gallery {
     border: 1px solid #ccc;
     float: left;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-color:white;
     transition: all .4s ease-in;
     /* ease0-in: tipo de efeito */
@@ -173,7 +173,7 @@ h1.title-txt span {
     display: flex;
     flex-direction: column;
     align-items: center ;
-    width: 800px;
+    max-width: 800px;
     margin:  auto;
     }
     
@@ -220,10 +220,8 @@ h1.title-txt span {
         -webkit-font-smoothing: antialiased;
     }
 
-    @media (max-width:560px) {
-        .youtube{
-        width: 80% !important;
-        }
+    /* Por padrão criar o midia: Pela ordem de maior */
+    @media (max-width:920px){
         .galeria {
             grid-template-areas:
             "SOMBRA-1 SOMBRA-2 "
@@ -232,7 +230,36 @@ h1.title-txt span {
             "SOMBRA-7 SOMBRA-8"
             "iframe iframe"
             ;
+            justify-content: center;
         }
+
+    }
+    @media(max-width:610px){
+        .galeria {
+            grid-template-areas: 
+            "SOMBRA-1"
+            "SOMBRA-2"
+            "SOMBRA-3"
+            "SOMBRA-4"
+            "SOMBRA-5"
+            "SOMBRA-6"
+            "SOMBRA-7"
+            "SOMBRA-8"
+            "iframe"
+            ;
+        }
+
+}
+    
+
+    @media (max-width:560px) {
+        .youtube{
+        width: 80% !important;
+        }
+
         
         }
+
+
+
    

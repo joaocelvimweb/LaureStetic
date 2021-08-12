@@ -125,6 +125,34 @@ i.selecao{
 .cards img:hover {
     height: 250px;
 }
+
+#galeria p {
+    background: white;
+    color:blue;
+    margin: 0px 30px;
+    border-radius: 50px;
+    font-weight: bolder;
+    margin: 4px 50px;
+    
+    
+}
+
+#galeria a{
+    text-decoration: none;
+  
+  
+}
+
+#box-1 p {
+ 
+    margin-top: 2px;
+    color:white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
 .subtitulo {
     margin: 20px 0px;
     font-weight: bolder; /*propriedade e valor de formato da espeçura da fonte*/
@@ -134,6 +162,8 @@ i.selecao{
     text-align: center;
     color: #9D9F9E;
 }
+
+
 
 .subtitulo .title  {
     text-align: center;
