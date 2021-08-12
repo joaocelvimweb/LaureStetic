@@ -36,7 +36,7 @@ justify-content: center;
     "SOMBRA-1 SOMBRA-2 SOMBRA-3"
     "SOMBRA-4 SOMBRA-5 SOMBRA-6"
     "SOMBRA-7 SOMBRA-8 SOMBRA-6"
-    "iframe iframe iframe"
+    
     ;
 
     display: grid;
@@ -100,6 +100,8 @@ justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
+    margin: 10px
 }
 
 
@@ -228,7 +230,7 @@ h1.title-txt span {
             "SOMBRA-3 SOMBRA-4"
             "SOMBRA-5 SOMBRA-6"
             "SOMBRA-7 SOMBRA-8"
-            "iframe iframe"
+         
             ;
             justify-content: center;
         }
@@ -245,8 +247,8 @@ h1.title-txt span {
             "SOMBRA-6"
             "SOMBRA-7"
             "SOMBRA-8"
-            "iframe"
-            ;
+           
+            
         }
 
 }
@@ -254,7 +256,7 @@ h1.title-txt span {
 
     @media (max-width:560px) {
         .youtube{
-        width: 80% !important;
+        width: 100% !important;
         }
 
         
