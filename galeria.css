@@ -18,10 +18,10 @@ justify-content: center;
 }
 .voltar a {
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
     font-size: 2rem;
     border: solid white;
-    width: 100px;
+    width: 120px;
     background-color:#93c83f;
     color: white;
     border-radius: 50px;
