@@ -7,6 +7,54 @@ body, ul, li, p {
 
 }
 
+:root{
+    --cor-fundo: rgb(34,31,37);
+    --cor-hover: rgb(118,180,145);
+    --cor-primaria: rgb(231,241,236); 
+}
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+   
+ 
+  
+}
+.dp-menu ul li{
+    display:inline;
+    position: relative;
+ 
+}
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background 0.6s;
+} 
+
+.dp-menu ul li a:hover  {
+    background-color: var(--cor-hover); 
+    
+  
+ }
+
+ /* sub menu */
+ .dp-menu ul ul{
+ display:none;
+ position:absolute;
+
+ }
+
+ .dp-menu ul li:hover ul{
+  display:block;
+  
+}
+.dp-menu ul ul {
+    width: 100px;
+    left: 10px;
+}
+.dp-menu ul ul li a {
+    display: block;
+}
 
 
 body {
@@ -22,43 +70,28 @@ h1 {
     margin-top: 100px;
 
 }
-a {
-    text-decoration: none;
-    color: white;
-}
 
-.header {
+
+     /* .header {
     background-color: black;
     display: flex;
+    /* display flex: para que os itens do menu fiquem um do lado do outro */
+    /* justify-content: ter uma distancia entre eles, para onde posicionar : space-between: espaço entre os itens 
     justify-content: space-between;
     padding: 20px;
-    /* alianhar o itens ao centro e entre eles */
+    /* alianhar o itens ao centro e entre eles 
     align-items: center;
-    /* flex-wrap: wrap quando diminuir a tela vai fazer o que o itens se quebrem automaticamente */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap quando diminuir a tela vai fazer o que o itens se quebrem automaticamente 
+    flex-wrap: wrap;  */
 
+
+.box{
+    background: tomato;
+    width: 20px;
+    color: white;
+    padding: 50px;
 }
-
-.menu {
-    display: flex;
-   
-    
-}
-
-
-.menu li {
-    margin-left: 10px;
-   
-}
-
-
-.menu li a {
-    display: block;
-    padding: 10px;
-    background-color: tomato;
-}
-
-
+ 
 img {
     max-width: 100%;
     display: block;
